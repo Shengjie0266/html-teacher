@@ -13,11 +13,11 @@
 <?php
 
 $db_server = "localhost";
-$db_name = "mydb";
-$db_user = "root";
-$db_passwd = "1234";
+$db_name = "105021040";
+$db_user = "105021040";
+$db_passwd = "#9oybGtrt";
 
-if(!@mysql_connect($db_server, $db_user, $db_passwd))
+$link=mysqli_connect("localhost", $db_user, $db_passwd,$db_name);
     die("無法對資料庫連線");
 
 mysql_query("SET NAMES utf8");
