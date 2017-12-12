@@ -7,7 +7,7 @@
  */
 ?>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 
 <?php
@@ -17,11 +17,14 @@ $db_name = "105021040";
 $db_user = "105021040";
 $db_passwd = "#9oybGtrt";
 
-$link=mysqli_connect("localhost", $db_user, $db_passwd,$db_name);
-    die("無法對資料庫連線");
+$link = mysqli_connect('localhost', '105021040', '#9oybGtrt', '105021040');
 
-mysql_query("SET NAMES utf8");
 
-if(!@mysql_select_db($db_name))
-    die("無法使用資料庫");
+//mysql_query("SET NAMES utf8");
+
+//if(!@mysql_select_db($db_name))
+//    die("無法使用資料庫");
+if (!$link) {
+    die("無法連接資料庫");
+}
 ?>

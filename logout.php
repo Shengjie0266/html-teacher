@@ -1,10 +1,5 @@
 <?php session_start(); ?>
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 2017/11/29
- * Time: 上午 10:57
- */
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
