@@ -59,7 +59,7 @@ echo '<li class="active" ><a href = "#" > 首頁</a ></li >
     </div >
     <h3 align = "center" ><span style = "color: darkblue" ><strong > 姓名:</strong ></span ><span style = "color: darksalmon" ><strong > 陳兆南</strong ></span > / <span style = "color:darksalmon" > Chao - Nan Chen </span ></h3 >
     <h3 align = "center" ><span style = "color: darkblue" ><strong > 任職單位:</strong ></span ><span style = "color: darksalmon" ><strong > 資訊工程學系 副教授 </strong ></span ></h3 >
-    <h3 align = "center" > E</h3 >
+    <h3 align = "center" > E-mail:</h3 >
 </div >
 
 <footer class="footer container-fluid text-center" >

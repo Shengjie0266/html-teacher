@@ -15,6 +15,6 @@ if ($id != null && $pw != null && $row[0] == $id && $row[2] == $pw) {
     echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 } else {
     echo '<p align="center">登入失敗</p>';
-    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.html>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 }
 ?>
