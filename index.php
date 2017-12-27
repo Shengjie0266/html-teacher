@@ -38,11 +38,11 @@ if (isset($_SESSION['username'])) {
 <li ><a href = "#" > 控制台</a ></li >';
 }
 echo '<li class="active" ><a href = "#" > 首頁</a ></li >
-                <li ><a href = "#" > 簡歷</a ></li >
-                <li ><a href = "#" > 學術</a ></li >
-                <li ><a href = "#" > 著作</a ></li >
-                <li ><a href = "#" > 學生</a ></li >
-                <li ><a href = "#" > 常用連結</a ></li >
+                <li ><a href = "resume.html" > 簡歷</a ></li >
+                <li ><a href = "Academic.html" > 學術</a ></li >
+                <li ><a href = "book.html" > 著作</a ></li >
+                <li ><a href = "student.html" > 學生</a ></li >
+                <li ><a href = "link.html" > 常用連結</a ></li >
             </ul >
             <ul class="nav navbar-nav navbar-right" >
                 <li ><a href = "login.php" ><span class="glyphicon glyphicon-log-in" ></span > Login</a ></li >
@@ -59,7 +59,7 @@ echo '<li class="active" ><a href = "#" > 首頁</a ></li >
     </div >
     <h3 align = "center" ><span style = "color: darkblue" ><strong > 姓名:</strong ></span ><span style = "color: darksalmon" ><strong > 陳兆南</strong ></span > / <span style = "color:darksalmon" > Chao - Nan Chen </span ></h3 >
     <h3 align = "center" ><span style = "color: darkblue" ><strong > 任職單位:</strong ></span ><span style = "color: darksalmon" ><strong > 資訊工程學系 副教授 </strong ></span ></h3 >
-    <h3 align = "center" > E-mail:</h3 >
+    <h3 align = "center" ><span style = "color: darkblue" ><strong > E-mail:</strong ></span ><span style = "color: darksalmon"><strong >d9228101@gmail.com </strong ></span ><span style="color: #ed2553"><strong>&</strong></span><span style = "color: darksalmon" ><strong > chencn@asia.edu.tw</strong ></span ></h3 >
 </div >
 
 <footer class="footer container-fluid text-center" >
