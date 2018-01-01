@@ -53,9 +53,9 @@ echo '<li class="active" ><a href = "#" > 首頁</a ></li >
 
 <div class="container-fluid text-center" >
     <div class="row" >
-        <div class="col-sm-3" style = "background-color:white;" ></div >
-        <div class="col-sm-6" style = "background-color:white;" ><img id = "photo"src = "img/01.jpg" width = "300px" height = "300px" ></div >
-        <div class="col-sm-3" style = "background-color:white;" ></div >
+        <div class="col-sm-3" style = "background-color:blanchedalmond;" ></div >
+        <div class="col-sm-12" style = "background-color:lightgrey;" ><img id = "photo"src = "img/01.jpg" width = "300px" height = "300px" ></div >
+        <div class="col-sm-3" style = "background-color:blanchedalmond;" ></div >
     </div >
     <h3 align = "center" ><span style = "color: darkblue" ><strong > 姓名:</strong ></span ><span style = "color: darksalmon" ><strong > 陳兆南</strong ></span > / <span style = "color:darksalmon" > Chao - Nan Chen </span ></h3 >
     <h3 align = "center" ><span style = "color: darkblue" ><strong > 任職單位:</strong ></span ><span style = "color: darksalmon" ><strong > 資訊工程學系 副教授 </strong ></span ></h3 >
