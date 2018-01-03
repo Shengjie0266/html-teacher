@@ -11,16 +11,15 @@ echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>陳兆南教授 web </title >
-    <meta charset = "utf-8" >
+    <meta charset="UTF-8">
+    <title>常用連結</title>
     <meta name = "viewport" content = "width=device-width, initial-scale=1" >
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script >
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script >
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />  
-</head >
-<body >
-
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+</head>
+<body>
 <nav class="navbar navbar-inverse" >
     <div class="container-fluid" >
         <div class="navbar-header" >
@@ -36,14 +35,12 @@ echo '
 if (isset($_SESSION['username'])) {
     echo '<li ><a href = "logout.php" > 登出</a ></li >
 <li ><a href = "#" > 控制台</a ></li >';
-}else{
-    
 }
-echo '<li class="active" ><a href = "index.php" > 首頁</a ></li >
+echo '<li ><a href = "index.php" > 首頁</a ></li >
                 <li ><a href = "resume.php" > 簡歷</a ></li >
                 <li ><a href = "academic.php" > 學術</a ></li >
-                <li ><a href = "book.php" > 著作</a ></li >                
-                <li ><a href = "link.php" > 常用連結</a ></li >
+                <li ><a href = "book.php" > 著作</a ></li >
+                <li class="active"><a href = "link.php" > 常用連結</a ></li >
             </ul >
             <ul class="nav navbar-nav navbar-right" >
                 <li ><a href = "login.php" ><span class="glyphicon glyphicon-log-in" ></span > Login</a ></li >
@@ -51,23 +48,20 @@ echo '<li class="active" ><a href = "index.php" > 首頁</a ></li >
         </div >
     </div >
 </nav >
-<div class="body1">
+
 <div class="container-fluid text-center" >
     <div class="row" >
-        <div class="col-sm-3" style = "background-color:blanchedalmond;" ></div >
-        <div class="col-sm-12" style = "background-color:#dc7e65;" ><img id = "photo"src = "img/01.jpg" width = "300px" height = "300px" ></div >
-        <div class="col-sm-3" style = "background-color:blanchedalmond;" ></div >
+        <div class="col-sm-3" style = "background-color:white;" ></div >
+        <div class="col-sm-6" style = "background-color:white;" ></div >
+        <div class="col-sm-3" style = "background-color:white;" ></div >
     </div >
-    <h3 align = "center" ><span style = "color: darkblue" ><strong > 姓名:</strong ></span ><span style = "color: darksalmon" ><strong > 陳兆南</strong ></span > / <span style = "color:darksalmon" > Chao - Nan Chen </span ></h3 >
-    <h3 align = "center" ><span style = "color: darkblue" ><strong > 任職單位:</strong ></span ><span style = "color: darksalmon" ><strong > 資訊工程學系 副教授 </strong ></span ></h3 >
-    <h3 align = "center" ><span style = "color: darkblue" ><strong > E-mail:</strong ></span ><span style = "color: darksalmon"><strong >d9228101@gmail.com </strong ></span ><span style="color: #ed2553"><strong>&</strong></span><span style = "color: darksalmon" ><strong > chencn@asia.edu.tw</strong ></span ></h3 >
+    <a href="https://www.facebook.com/nankei"><img src="img/fb.png" alt="" style="margin-top: 200px; width: 150px"></a>
+
 </div >
-</div>
 
 <footer class="footer container-fluid text-center" >
     <p > Powered by Shengjie </p >
 </footer >
-
-</body >
-</html > ';
-?>
+</body>
+</html>';
+    ?>
