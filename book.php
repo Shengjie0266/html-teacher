@@ -1,11 +1,11 @@
 <?php
 session_start();
 ?>
-<?php if (isset($_SESSION['username'])) {
+<?php if (isset($_SESSION['id'])) {
     include("mysql_connect.inc.php");
-    $sql = "SELECT * FROM user where id = '$id'";
-    $result = $link->query($sql);
-    $row = $result->fetch_row();
+    $sql = "SELECT * FROM `user` where id = '$id'";
+    $result = mysqli_query($link,$sql);
+    $row = @mysqli_fetch_row($result);
 }
 echo '
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ echo '
 <head>
     <meta charset="UTF-8">
     <title>著作</title>
-    <meta name = "viewport" content = "width=device-width, initial-scale=1" >
+    <meta name = "viewport" content = "width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=1;" >
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script >
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script >
@@ -32,23 +32,23 @@ echo '
         </div >
         <div class="collapse navbar-collapse" id = "myNavbar" >
             <ul class="nav navbar-nav" >';
-    if (isset($_SESSION['username'])) {
-        echo '<li ><a href = "logout.php" > 登出</a ></li >
-<li ><a href = "#" > 控制台</a ></li >';
+    if (isset($_SESSION['id'])) {
+        echo '<li ><a href = "logout.php" ><span class="glyphicon glyphicon-log-in"> Logout</span></a ></li >
+<li ><a href = "member.php" > 控制台</a ></li >';
+    }else{
+        echo '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>';
     }
 echo '<li ><a href = "index.php" > 首頁</a ></li >              
                 <li ><a href = "resume.php" > 簡歷</a ></li >
                 <li ><a href = "academic.php" > 學術</a ></li >
                 <li class="active"><a href = "book.php" > 著作</a ></li >
                 <li ><a href = "link.php" > 常用連結</a ></li >
-            </ul >
+            </ul >            
             <ul class="nav navbar-nav navbar-right" >
-                <li ><a href = "login.php" ><span class="glyphicon glyphicon-log-in" ></span > Login</a ></li >
-            </ul >
-        </div >
-    </div >
-</nav >
-
+            </ul >  
+             </div >
+       </div >
+</nav > 
 <div class="container-fluid text-center" >
     <div class="row" >
         <div class="col-sm-3" style = "background-color:white;" ></div >

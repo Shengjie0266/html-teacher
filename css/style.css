@@ -18,10 +18,8 @@ body{
     border-radius: 0;
 }
 
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row . content {
-    height:
-            450px
+    height: 450px
 }
 
 .sidenav {
@@ -47,9 +45,7 @@ body{
     padding-bottom: 12px;
 
 }
-/*.body1{*/
-    /*padding-bottom: 100px;*/
-/*}*/
+
 .footer {
     background-color: #555;
     margin-top: 20px;
@@ -61,7 +57,10 @@ body{
     color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #fff9d4;
+    }
     .sidenav {
         height:
                 auto;
