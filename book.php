@@ -58,7 +58,7 @@ echo '<li ><a href = "index.php" > 首頁</a ></li >
     <div align="center">
         <table border="1" style="margin: 20px;border:3px #ada8a8 double;">
             <tr>
-                　<td colspan="2" style="padding: 3px 2px 3px 2px;font-size: 2em;background-color: #ff0083" align="left">期刊論文</td>
+                　<td colspan="2" style="padding: 3px 2px 3px 2px;font-size: 2em;background-color: #b9bbff" align="left">期刊論文</td>
                 　</tr>
             　<tr style="background-color: #f9c020">
             　<td style="padding: 5px 7px 5px 7px" align="center">1</td>

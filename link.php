@@ -55,8 +55,9 @@ echo '<li ><a href = "index.php" > 首頁</a ></li >
         <div class="col-sm-6" style = "background-color:white;" ></div >
         <div class="col-sm-3" style = "background-color:white;" ></div >
     </div >
-    <a href="https://www.facebook.com/nankei"><img src="img/fb.png" alt="" style="margin-top: 200px; width: 150px"></a>
-
+    <a href="https://www.facebook.com/nankei"><img src="img/fb.png" alt="" style="margin-top: 170px; width: 150px"></a><br>
+    <a href="http://csie.asia.edu.tw/"><img src="img/csie.gif" alt="" style="margin-top: 100px; width: 250px"></a>
+    
 </div >
 
 <footer class="footer container-fluid text-center" >
