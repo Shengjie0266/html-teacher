@@ -18,12 +18,12 @@ if($_SESSION['id'] != null){
     if(@mysqli_query($link,$sql))
     {
         echo '刪除成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=modify.php>';
     }
     else
     {
         echo '刪除失敗!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=modify.php>';
     }
 }
 else

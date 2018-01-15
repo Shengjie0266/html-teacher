@@ -13,36 +13,43 @@ echo '
 <head>
     <meta charset="UTF-8">
     <title>簡歷</title>
-    <meta name = "viewport" content = "width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=1;" >
+    <meta name = "viewport" content = "width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" >
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script >
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script >
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Kavivanar);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+</style> 
 </head>
 <body>
+
 <nav class="navbar navbar-inverse" >
     <div class="container-fluid" >
         <div class="navbar-header" >
-            <button type = "button" class="navbar-toggle" data - toggle = "collapse" data - target = "#myNavbar" >
+            <button type = "button" class="navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar" >
                 <span class="icon-bar" ></span >
                 <span class="icon-bar" ></span >
                 <span class="icon-bar" ></span >
-            </button >
-            <a class="navbar-brand" href = "#" > 陳兆南</a >
+            </button >  
+            <a class="navbar-brand" href = "index.php" ><span style="font-family: cwTeXYen, sans-serif;"> 陳兆南</span></a >
         </div >
         <div class="collapse navbar-collapse" id = "myNavbar" >
             <ul class="nav navbar-nav" >';
 if (isset($_SESSION['id'])) {
     echo '<li ><a href = "logout.php" ><span class="glyphicon glyphicon-log-in"> Logout</span></a ></li >
-<li ><a href = "member.php" > 控制台</a ></li >';
+<li ><a href = "modify.php" style="font-family: cwTeXYen,sans-serif;"> 控制台</a></li>';
 } else {
     echo '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>';
 }
-echo '<li ><a href = "index.php" > 首頁</a ></li >
-                <li class="active"><a href = "resume.php" > 簡歷</a ></li >
-                <li ><a href = "academic.php" > 學術</a ></li >
-                <li ><a href = "book.php" > 著作</a ></li >
-                <li ><a href = "link.php" > 常用連結</a ></li >
+echo '<li ><a href = "index.php" style="font-family: cwTeXYen, sans-serif;"> 首頁</a ></li >
+                <li class="active"><a href = "resume.php" style="font-family: cwTeXYen, sans-serif; font-size: 1.3em"> 簡歷</a ></li >
+                <li ><a href = "academic.php" style="font-family: cwTeXYen, sans-serif;"> 學術</a ></li >
+                <li ><a href = "book.php" style="font-family: cwTeXYen, sans-serif;"> 著作</a ></li >
+                <li ><a href = "awards.php" style="font-family: cwTeXYen, sans-serif;"> 獲獎</a ></li >
+                <li ><a href = "link.php" style="font-family: cwTeXYen, sans-serif;"> 常用連結</a ></li >
             </ul >
             <ul class="nav navbar-nav navbar-right" >
             </ul >
@@ -56,51 +63,51 @@ echo '<li ><a href = "index.php" > 首頁</a ></li >
         <div class="col-sm-3" style = "background-color:white;" ></div >
     </div >
     <div align="center" class="form">
-    <table border="1" width="500px">
+    <table border="1" width="500px" style="background:url(img/sakura.png)">
         <thead>
 　<tr>
-　<th align="center" style="font-size: 2em"><span style="color:black">學歷</span></th>
+　<th align="center" style="font-size: 2em;font-family: cwTeXYen, sans-serif;"><span style="color:black;font-family: cwTeXYen, sans-serif;">學歷</span></th>
 　</tr>
         </thead>
         <tbody>
           <tr>
-              <td align="center" style="font-size: 1.5em;color:blue">長庚大學 電子工程 博士</td>
+              <td align="center" style="font-size: 1.5em;color:#9100ff;font-family: cwTeXYen, sans-serif;">長庚大學 電子工程 博士</td>
           </tr>
         </tbody>
     </table>
-        <table border="1" width="500px">
+        <table border="1" width="500px" style="background:url(img/sakura.png)">
             <thead>
 　<tr>
-　<th align="center" style="font-size: 2em"><span style="color: black">經歷</span></th>
+　<th align="center" style="font-size: 2em"><span style="color: black;font-family: cwTeXYen, sans-serif;">經歷</span></th>
 　</tr>
             </thead>
             <tbody>
             <tr>
-                <td align="center" style="font-size: 1.5em;color: blue">南開科技大學 兼任助理教授</td>
+                <td align="center" style="font-size: 1.5em;color: #9100ff;font-family: cwTeXYen, sans-serif;">南開科技大學 兼任助理教授</td>
             </tr>
             <tr>
-                <td align="center" style="font-size: 1.5em;color:blue">中華映管股份有限公司 研發設計工程師</td>
+                <td align="center" style="font-size: 1.5em;color:#9100ff;font-family: cwTeXYen, sans-serif;">中華映管股份有限公司 研發設計工程師</td>
             </tr>
             <tr>
-                <td align="center" style="font-size: 1.5em;color:blue">工業技術研究院顯示中心 研發工程師</td>
+                <td align="center" style="font-size: 1.5em;color:#9100ff;font-family: cwTeXYen, sans-serif;">工業技術研究院顯示中心 研發工程師</td>
             </tr>
             </tbody>
         </table>
-        <table border="1" width="500px">
+        <table border="1" width="500px" style="background:url(img/sakura.png)">
             <thead>
 　<tr>
-　<th align="center" style="font-size: 2em"><span style="color: black">專長</span></th>
+　<th align="center" style="font-size: 2em"><span style="color: black;font-family: cwTeXYen, sans-serif;">專長</span></th>
 　</tr>
             </thead>
             <tbody>
             <tr>
-                <td align="center" style="font-size: 1.5em;color:blue">顯示技術</td>
+                <td align="center" style="font-size: 1.5em;color:#9100ff;font-family: cwTeXYen, sans-serif;">顯示技術</td>
             </tr>
             <tr>
-                <td align="center" style="font-size: 1.5em;color:blue">媒體與互動設計</td>
+                <td align="center" style="font-size: 1.5em;color:#9100ff;font-family: cwTeXYen, sans-serif;">媒體與互動設計</td>
             </tr>
             <tr>
-                <td align="center" style="font-size: 1.5em; color:blue">數位學習內容</td>
+                <td align="center" style="font-size: 1.5em; color:#9100ff;font-family: cwTeXYen, sans-serif;">數位學習內容</td>
             </tr>
             </tbody>
         </table>
@@ -109,7 +116,7 @@ echo '<li ><a href = "index.php" > 首頁</a ></li >
 </div >
 
 <footer class="footer container-fluid text-center" >
-    <p > Powered by Shengjie </p >
+    <p style="font-family: Great Vibes, cursive; font-size: 1.2em"> Powered by Shengjie </p >
 </footer >
 </body>
 </html>';

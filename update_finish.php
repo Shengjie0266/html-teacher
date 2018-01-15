@@ -28,12 +28,12 @@ if($_SESSION['id'] != null && $pw != null && $pw2 != null && $pw == $pw2)
     if(@mysqli_query($link,$sql))
     {
         echo '修改成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=modify.php>';
     }
     else
     {
         echo '修改失敗!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=modify.php>';
     }
 }
 else

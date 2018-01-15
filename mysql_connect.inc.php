@@ -19,7 +19,7 @@ $db_passwd = "#9oybGtrt";
 
 if(!@$link=mysqli_connect($db_server,$db_user,$db_passwd,$db_name))
     die("無法對資料庫連線");
-mysqli_query($link,"set UTF8");
+mysqli_query($link,"SET NAMES utf8");
 
 //mysql_query("SET NAMES utf8");
 

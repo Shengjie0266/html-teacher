@@ -8,6 +8,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
+<body background="img/bg1.jpg">
+
+</body>
 <?php
 include("mysql_connect.inc.php");
 
